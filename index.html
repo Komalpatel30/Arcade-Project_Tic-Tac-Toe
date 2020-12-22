@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+
+    <style>
+     
+     body {
+         background-color: #226293;
+         margin-top: 10%;
+     }
+
+     section {
+         text-align: center;
+     }
+
+     h1 {
+         font-size: 65px;
+         color: #fc0;
+     }
+
+     h3 {
+         color: #fc0;
+     }
+
+     .game-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(3, auto);
+        width: 306px;
+        margin: 50px auto;
+        }
+
+    .cell {
+        font-family: "Permanent Marker", cursive;
+        width: 150px;
+        height: 150px;
+        box-shadow: 0 0 0 1px #fc0;
+        border: 1px solid #333333;
+        cursor: pointer;
+        line-height: 100px;
+        font-size: 120px;
+        color: #fc0;
+        text-align: center;
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        }
+
+    h2 {
+        text-align: center;
+        color: #fc0;
+    }    
+    
+    </style>   
+</head>
+<body>
+    <section>
+        <h1 class="game-name">Tic Tac Toe</h1>
+        <h3>Player 1 Score=<span class="player-1"> 0</span></h3>
+        <h3>Player 2 Score=<span class="player-2"> 0</span></h3>
+        <h3>Draw =<span class="draw"> 0</span></h3>
+        <h2>Turn: Player <span class="turn"> 1</span></h2>
+        </h3>
+        <div class="game-container">
+            <div id="cell_1" class="cell"></div>
+            <div id="cell_2" class="cell"></div>
+            <div id="cell_3" class="cell"></div>
+            <div id="cell_4" class="cell"></div>
+            <div id="cell_5" class="cell"></div>
+            <div id="cell_6" class="cell"></div>
+            <div id="cell_7" class="cell"></div>
+            <div id="cell_8" class="cell"></div>
+            <div id="cell_9" class="cell"></div>
+        </div>
+        <h2 class="game-status"></h2>
+        <button class="game-restart">Restart Game</button>
+    </section>
+</body>
+</html>
